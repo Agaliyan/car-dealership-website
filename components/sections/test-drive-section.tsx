@@ -10,11 +10,11 @@ import { BookingForm } from "@/components/booking-form"
 export function TestDriveSection() {
   return (
     <section id="book" className="relative overflow-hidden bg-black py-20 md:py-28">
-      {/* DEMO: Wide background photo of the luxxera showroom or cars parked together */}
+      {/* Showroom — wide cinematic shot of luxury cars in the luxxera showroom */}
       <div className="absolute inset-0">
         <Image
-          src="/placeholder.svg?height=1000&width=1920"
-          alt="luxxera showroom — placeholder background"
+          src="/images/showroom-bg.jpg"
+          alt="luxxera showroom with a row of premium cars"
           fill
           className="object-cover"
           sizes="100vw"

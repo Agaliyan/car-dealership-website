@@ -10,11 +10,11 @@ import { Button } from "@/components/ui/button"
 export function HomeHero() {
   return (
     <section className="relative -mt-16 h-screen min-h-[680px] w-full overflow-hidden bg-black">
-      {/* DEMO: Cinematic luxury car photo — rear quarter angle, dark moody lighting */}
+      {/* Hero — cinematic dark rear three-quarter of a luxury coupe with red taillight glow */}
       <div className="absolute inset-0">
         <Image
-          src="/placeholder.svg?height=1200&width=1920"
-          alt="luxxera hero — placeholder dramatic car photograph"
+          src="/images/hero-rear.jpg"
+          alt="Dark luxury sports coupe rear with glowing red taillights"
           fill
           priority
           className="object-cover object-right"
