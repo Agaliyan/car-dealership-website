@@ -56,7 +56,7 @@ export function FeaturedInventory({ showTitle = true }: { showTitle?: boolean } 
   }, [active])
 
   return (
-    <section id="inventory" className="bg-black py-20 md:py-28">
+    <section id="inventory" className={cn("bg-black", showTitle ? "py-20 md:py-28" : "pb-20 md:pb-28 pt-0")}>
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         {showTitle && (
           <div className="text-center">

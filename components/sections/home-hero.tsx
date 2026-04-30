@@ -13,17 +13,19 @@ export function HomeHero() {
       {/* Hero — cinematic dark rear three-quarter of a luxury coupe with red taillight glow */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-rear.jpg"
-          alt="Dark luxury sports coupe rear with glowing red taillights"
+          src="/images/hero-showroom.png"
+          alt="Premium luxury car showroom"
           fill
           priority
-          className="object-cover object-right"
+          className="object-cover object-center brightness-200 contrast-125"
           sizes="100vw"
         />
-        {/* Left gradient overlay covering ~60% */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent" />
-        {/* Bottom gradient on mobile so text stays readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent md:hidden" />
+        
+        {/* Gradient overlays to ensure text readability and blend into the page */}
+        {/* Left fade for text - slightly brightened */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 via-[45%] to-transparent pointer-events-none" />
+        {/* Bottom fade for a smooth transition down the page */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent pointer-events-none" />
       </div>
 
       {/* Content — anchored flush to the bottom-left of the hero at all viewports */}
