@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Trophy } from "lucide-react"
+import { Gem } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
@@ -26,8 +26,8 @@ export function HomeHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent md:hidden" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-16 pt-32 md:px-8 md:pb-24">
+      {/* Content — anchored flush to the bottom-left of the hero at all viewports */}
+      <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-12 md:px-12 md:pb-16">
         <motion.div
           initial="initial"
           animate="animate"
@@ -35,7 +35,7 @@ export function HomeHero() {
             initial: {},
             animate: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
           }}
-          className="max-w-2xl"
+          className="max-w-3xl"
         >
           <motion.div
             variants={{
@@ -43,9 +43,9 @@ export function HomeHero() {
               animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
             }}
           >
-            <Badge className="rounded-full border-0 bg-[#1a1a1a]/80 px-4 py-1.5 text-xs font-medium tracking-wide text-white backdrop-blur-md hover:bg-[#1a1a1a]/80">
-              <Trophy className="mr-1.5 size-3" />
-              Colombo&apos;s Premier Car Dealership
+            <Badge className="rounded-full border-0 bg-[#1a1a1a]/80 px-4 py-1.5 text-xs font-normal tracking-wide text-white backdrop-blur-md hover:bg-[#1a1a1a]/80">
+              <Gem className="mr-1.5 size-3" />
+              Chosen by more than 250 clients
             </Badge>
           </motion.div>
 
@@ -54,11 +54,11 @@ export function HomeHero() {
               initial: { opacity: 0, y: 24 },
               animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
             }}
-            className="mt-6 text-balance text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl"
+            className="mt-6 text-pretty text-5xl font-medium leading-[1.05] tracking-tight text-white md:text-7xl"
           >
-            Premium Cars
+            Premium Automotive
             <br />
-            in Colombo
+            Sales in Colombo
           </motion.h1>
 
           <motion.p
@@ -66,10 +66,10 @@ export function HomeHero() {
               initial: { opacity: 0, y: 24 },
               animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
             }}
-            className="mt-6 max-w-md text-pretty text-sm leading-relaxed text-[#aaaaaa] md:text-base"
+            className="mt-6 max-w-xl text-pretty text-base font-light leading-relaxed text-[#aaaaaa]"
           >
-            Find your perfect vehicle from our handpicked collection of luxury and performance
-            cars — fully inspected, transparently priced, ready to drive.
+            Experience unmatched craftsmanship, performance, and service — drive home a car
+            that defines you.
           </motion.p>
 
           <motion.div
@@ -77,20 +77,13 @@ export function HomeHero() {
               initial: { opacity: 0, y: 24 },
               animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
             }}
-            className="mt-10 flex flex-wrap items-center gap-3"
+            className="mt-8"
           >
             <Button
               asChild
               className="h-12 rounded-full bg-white px-7 text-sm font-medium text-black hover:bg-white/90"
             >
-              <Link href="/inventory">Browse Inventory</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="h-12 rounded-full border-white/30 bg-transparent px-7 text-sm font-medium text-white hover:bg-white/10 hover:text-white"
-            >
-              <Link href="/contact">Book a Test Drive</Link>
+              <Link href="/inventory">Choose Your Car</Link>
             </Button>
           </motion.div>
         </motion.div>
