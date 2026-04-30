@@ -32,57 +32,58 @@ export function Navbar() {
           : "border-b border-transparent bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
-        {/* Logo */}
+      <div className="flex h-16 w-full items-center justify-between px-6 md:px-8">
+        {/* Logo — pinned to far left edge */}
         <Link href="/" className="flex items-center gap-2 text-white">
-          <span className="flex size-7 items-center justify-center rounded-full bg-white text-black">
+          <span className="flex size-7 items-center justify-center rounded-md bg-[#1a1a1a] text-white ring-1 ring-white/10">
             <Gem className="size-3.5" />
           </span>
           <span className="text-base font-semibold tracking-tight">luxxera</span>
         </Link>
 
-        {/* Center nav (desktop) */}
-        <nav className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-sm text-white transition-colors hover:text-[#888888]"
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Right side — nav links grouped just before the icon/CTA cluster */}
+        <div className="hidden items-center md:flex">
+          <nav className="mr-10 flex items-center gap-10">
+            {NAV_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-sm text-white transition-colors hover:text-[#888888]"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
 
-        {/* Right cluster (desktop) */}
-        <div className="hidden items-center gap-4 md:flex">
-          <Link
-            href="https://instagram.com"
-            aria-label="Instagram"
-            className="text-white transition-colors hover:text-[#888888]"
-          >
-            <Instagram className="size-4" />
-          </Link>
-          <Link
-            href="https://wa.me/94770000000"
-            aria-label="WhatsApp"
-            className="text-white transition-colors hover:text-[#888888]"
-          >
-            <MessageCircle className="size-4" />
-          </Link>
-          <Link
-            href="tel:+94770000000"
-            aria-label="Call"
-            className="text-white transition-colors hover:text-[#888888]"
-          >
-            <Phone className="size-4" />
-          </Link>
-          <Button
-            asChild
-            className="h-10 rounded-full bg-white px-5 text-sm font-medium text-black hover:bg-white/90"
-          >
-            <Link href="/contact">Book a Test Drive</Link>
-          </Button>
+          <div className="flex items-center gap-5">
+            <Link
+              href="https://instagram.com"
+              aria-label="Instagram"
+              className="text-white transition-colors hover:text-[#888888]"
+            >
+              <Instagram className="size-4" />
+            </Link>
+            <Link
+              href="https://wa.me/94770000000"
+              aria-label="WhatsApp"
+              className="text-white transition-colors hover:text-[#888888]"
+            >
+              <MessageCircle className="size-4" />
+            </Link>
+            <Link
+              href="tel:+94770000000"
+              aria-label="Call"
+              className="text-white transition-colors hover:text-[#888888]"
+            >
+              <Phone className="size-4" />
+            </Link>
+            <Button
+              asChild
+              className="ml-2 h-10 rounded-full bg-white px-5 text-sm font-medium text-black hover:bg-white/90"
+            >
+              <Link href="/contact">Book a Test Drive</Link>
+            </Button>
+          </div>
         </div>
 
         {/* Mobile menu trigger */}
