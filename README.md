@@ -4,16 +4,6 @@
   A premium, dark-themed car dealership website built for <strong>luxxera</strong> — a luxury automotive dealership based in Colombo, Sri Lanka. Showcases a curated inventory of high-end vehicles with cinematic visuals, smooth Framer Motion animations, and full mobile responsiveness.
 </p>
 
-<p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-pages--routes">Pages</a> •
-  <a href="#-project-structure">Structure</a> •
-  <a href="#-getting-started">Setup</a> •
-  <a href="#-customization-guide">Customize</a> •
-  <a href="#-deployment">Deploy</a>
-</p>
-
 ---
 
 ## ✨ Features
@@ -77,8 +67,3 @@
 | **Package Manager** | npm / pnpm                                                                         |
 
 ---
-
-
-<p align="center">
-  Built with ❤️ for <strong>luxxera</strong> — Premium Automotive Sales in Colombo
-</p>
