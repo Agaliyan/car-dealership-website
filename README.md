@@ -1,35 +1,21 @@
-# car-dealership-website
+# luxxera - Premium Car Dealership Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+This repository contains the source code for luxxera, a modern and responsive website for a premium car dealership. Built with Next.js and styled with Tailwind CSS, it features a sleek, monochromatic dark theme perfect for showcasing luxury and performance vehicles. The project is designed to provide a seamless and elegant user experience on all devices.
 
-## Built with v0
+## Features
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+-   **Dynamic Home Page:** An engaging landing page with a cinematic hero section, featured inventory, "Why Choose Us" section, and a test drive booking form.
+-   **Comprehensive Inventory:** A fully filterable and sortable inventory grid allows users to easily browse all available vehicles by brand, type, and transmission, as well as sort by price or year.
+-   **Detailed Vehicle Pages:** Each car has a dedicated page with a multi-image gallery, complete specifications, a list of notable features, and a vehicle-specific enquiry form.
+-   **Interactive Forms:** The site includes user-friendly forms for general contact, booking test drives, and making specific vehicle enquiries, all implemented with React Hook Form.
+-   **Fully Responsive Design:** A mobile-first approach ensures the website looks and functions beautifully on devices of all sizes, from mobile phones to large desktops.
+-   **Modern & Sleek UI:** A stylish, dark-themed user interface built using a custom component library based on shadcn/ui principles.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_4xO1BmUZl4JLlpGi7FxsIiq0oBjd)
+## Tech Stack
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
-
-<a href="https://v0.app/chat/api/kiro/clone/Agaliyan/car-dealership-website" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+-   **Framework:** [Next.js](https://nextjs.org/) (App Router)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+-   **Animations:** [Framer Motion](https://www.framer.com/motion/)
+-   **Forms:** [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
